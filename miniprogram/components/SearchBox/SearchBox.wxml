@@ -1,0 +1,10 @@
+<view class="search">
+
+    <view class="search-input">
+        <view class="search-content">
+            <image class="search-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/search.png"></image>
+            <text class="search-text">搜索</text>
+        </view>
+    </view>
+    
+</view>

@@ -1,0 +1,4 @@
+<view class="body">
+    <Tab tabList="{{tabList}}" bindgettab="getTab" />
+    <ViewBox wx:for="{{list}}" wx:key="index" data="{{item}}" bindtap="toDetail" data-item="{{item}}" />
+</view>

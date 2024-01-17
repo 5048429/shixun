@@ -1,0 +1,85 @@
+.body {
+    position: relative;
+    padding-bottom: 255rpx;
+}
+
+.swiper {
+    height: 65vh;
+    display: flex;
+}
+
+.swiper-img {
+    width: 100%;
+    height: 65vh;
+}
+
+.name {
+    background-color: #fff;
+    margin-top: 20rpx;
+    padding: 20rpx;
+    font-weight: bold;
+}
+
+.content-box {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.content-box .item {
+    padding: 25rpx;
+    display: flex;
+    align-items: center;
+}
+
+.content-box .item .title {
+    width: 70rpx;
+    font-size: 26rpx;
+    color: #999999;
+    margin-right: 20rpx;
+}
+
+.bottom-box {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    padding: 20rpx 40rpx;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0rpx;
+    /* bottom: env(safe-area-inset-bottom); */
+}
+
+.bottom-box .bottom-left {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 30rpx;
+    padding: 10rpx;
+    width: 70%;
+    color: #999999;
+}
+
+.bottom-box .bottom-left .comment-icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 10rpx;
+}
+
+.bottom-box .bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-box .bottom-right .collect-icon {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.bottom-box .bottom-left,
+.bottom-right .bottom-text {
+    font-size: 26rpx;
+}

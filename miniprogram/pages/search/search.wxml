@@ -1,0 +1,35 @@
+<view class="body">
+    <!-- 搜索框 -->
+    <view class="search-box">
+        <image class="search-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/search.png"></image>
+        <input class="search-text" value="{{_search_input}}" placeholder="搜索" bindinput="getSearch" type="text" />
+        <image class="close-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/close.png" wx:if="{{_search_input.length > 0}}" bindtap="deleteSearch"></image>
+    </view>
+
+    <!-- 搜索历史 -->
+    <view class="empty-search" wx:if="{{search_input.length === 0}}">
+        <view class="search-history">
+            <text class="history-text">搜索历史</text>
+            <image class="delete-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/delete.png" bindtap="deleteSearchLog"></image>
+        </view>
+        <view class="search-history-list">
+            <view class="search-history-item" wx:for="{{searchLog}}" wx:key="index">{{item}}</view>
+        </view>
+    </view>
+
+    <!-- 搜索结果 -->
+    <view class="result-search" wx:if="{{searchResults.length > 0}}">
+        <view class="search-item" wx:for="{{searchResults}}" wx:key="_id" bindtap="toDetail" data-item="{{item}}">
+            <view class="search-item-content">
+                <text>{{item.name}}</text>
+                <text>{{item.desc}}</text>
+                <!-- 如果有图片列表并且列表不为空，则显示第一张图片 -->
+                <image wx:if="{{item.imgList.length > 0}}" class="search-item-image" src="{{item.imgList[0]}}" />
+                <!-- 其他信息 -->
+                <text>{{item.region}}</text>
+                <text>{{item.date}}</text>
+            </view>
+            <image class="arrow-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/right.png"></image>
+        </view>
+    </view>
+</view>

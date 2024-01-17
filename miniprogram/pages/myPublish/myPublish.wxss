@@ -1,0 +1,9 @@
+/* pages/myPublish/myPublish.wxss */
+.delete-btn {
+  border: 1px solid #a32034; /* 添加边框 */
+  color: #a32034; /* 设置文字颜色 */
+  background-color: white; /* 背景色设置为白色 */
+  padding: 5px 10px; /* 内边距 */
+  margin: 5px; /* 外边距 */
+  border-radius: 5px; /* 边框圆角 */
+}

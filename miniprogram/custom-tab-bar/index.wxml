@@ -1,0 +1,21 @@
+<view class="tabbar">
+
+    <view class="tabbar-item {{select === index ? 'tabbar-select' : ''}}" wx:for="{{list}}" wx:key="index" data-page="{{item.pagePath}}" data-index="{{item.index}}" data-type="{{item.type}}" bindtap="selectPage">
+        
+        <!-- 下方选择栏 -->
+        <block wx:if="{{item.type === 0}}">
+            <image class="tabbar-icon" src="{{select === index ? item.selectedIconPath:item.iconPath}}"></image>
+            <text class="tabbar-text">{{item.text}}</text>
+        </block>
+
+        <!-- 中间发布按钮 -->
+        <block wx:else>
+            <view class="tabbar-item">
+                 <view class="publish">
+                    <image class="publish-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/_add.png"></image>
+                </view>
+            </view>
+        </block>
+        
+    </view>
+</view>

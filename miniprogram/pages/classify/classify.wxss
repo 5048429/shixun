@@ -1,0 +1,67 @@
+.search {
+    background-color: #a32034 !important;
+}
+
+.classify-box {
+    display: flex;
+    background-color: #fff;
+}
+
+.classify-left {
+    display: flex;
+    flex-direction: column;
+    width: 300rpx; /* 增加宽度 */
+}
+
+.left-item {
+    background-color: #f3f3f3;
+    padding: 80rpx 20rpx;
+    text-align: center;
+    font-size: 100rpx;
+    position: relative;
+}
+
+.left-item .find-itemtext {
+    font-size: 50rpx;
+    white-space: nowrap;
+}
+
+.classify-line {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 90%;
+    border: 1rpx solid #a32034;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.classify-select {
+    background-color: #fff;
+}
+
+.classify-right {
+    display: flex;
+    flex-wrap: wrap;
+    /*自换行*/
+    width: 100%;
+    align-content: flex-start;
+}
+
+.right-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 80rpx 0;
+}
+
+.right-item .find-img {
+    width: 180rpx;
+    height: 180rpx;
+}
+
+.right-item .find-text {
+    font-size: 50rpx;
+}
