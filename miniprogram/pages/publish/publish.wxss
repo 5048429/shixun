@@ -26,10 +26,11 @@
 
 .type .type-item {
     background-color: #eee;
-    padding: 10rpx 70rpx;
+    padding: 20rpx 100rpx;
     border: 1rpx solid #aaa;
+    font-size: 40rpx; /* 增加字体大小 */
     /* margin-right: 100rpx; */
-    margin-left: 100rpx;
+    margin-left: 40rpx;
     border-radius: 10rpx;
 }
 
@@ -61,7 +62,7 @@
     align-items: center;
     border: 2rpx solid #aaa;
     width: 100%;
-    padding: 10rpx 20rpx;
+    padding: 20rpx 20rpx;
     box-sizing: border-box;
     border-radius: 15rpx;
     justify-content: space-between;
@@ -83,16 +84,22 @@
     padding-top: 80rpx;
     border-bottom: 5rpx solid #f3f3f3;
     font-size: 26rpx;
+    padding-top: 40rpx; /* 这是输入框顶部的内边距 */
 }
 
 .input-list .input-item {
-    margin-bottom: 70rpx;
+    margin-bottom: 40rpx;
+    border: 1px solid #aaa; /* 添加1像素的黑色实线边框 */
+    padding: 10rpx 70rpx;
+    border-radius: 10rpx;
 }
 
 .desc {
     padding: 30rpx 15rpx;
     border-bottom: 5rpx solid #f3f3f3;
     position: relative;
+    border: 1px solid #aaa; /* 添加1像素的黑色实线边框 */
+    border-radius: 10rpx;
 }
 
 .desc .delete-icon {
@@ -152,7 +159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 300rpx;
+    margin-top: 50rpx;
 }
 
 .bottom .publish-btn {

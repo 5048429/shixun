@@ -1,7 +1,7 @@
 <view class="body">
 
     <!-- 搜索框模块 -->
-    <SearchBox bindtap="toSearch" />
+    <!-- <SearchBox bindtap="toSearch" /> -->
 
     <!-- 轮播图模块 -->
     <swiper class="swiper" indicator-dots="true" autoplay="false" interval="2000" duration="500">

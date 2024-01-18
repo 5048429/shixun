@@ -9,7 +9,7 @@
 
         <!-- 物品类型选择 -->
         <view class="classify">
-            <text class="label">物品类型：</text>
+            <text class="label" style="width: 140rpx; height: 57rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 12rpx">物品类型：</text>
             <picker class="picker" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
                 <view class="picker-item">
                     <view class="select" wx:if="{{select}}">
@@ -29,11 +29,11 @@
             <input class="input-item" value="{{name}}" bindinput="getName" placeholder="请输入物品名称" type="text" />
             <input class="input-item" value="{{date}}" bindinput="getDate" placeholder="请输入丢失/拾取时间" type="text" />
             <input class="input-item" value="{{region}}" bindinput="getRegion" placeholder="请输入丢失/拾取地点" type="text" />
-            <input class="input-item" value="{{contact}}" bindinput="getContact" placeholder="如何联系您？如：qq:xxx...,wx:xxx..." type="text" />
+            <input style="width: 650rpx; height: 66rpx; display: block; box-sizing: border-box" class="input-item" value="{{contact}}" bindinput="getContact" placeholder="您的联系方式？如：qq:xxx...,wx:xxx..." type="text" />
         </view>
 
         <!-- 物品描述 -->
-        <view class="desc">
+        <view class="desc" style="width: 682rpx; height: 176rpx; display: block; box-sizing: border-box; left: 1rpx; top: 0rpx; position: relative">
             <textarea value="{{desc}}" placeholder="请输入物品描述" id="" cols="25" rows="10" style="font-size: 26rpx;" bindinput="getDesc"></textarea>
             <image wx:if="{{desc.length > 0}}" class="delete-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/close.png" bindtap="clearDesc"></image>
         </view>

@@ -47,7 +47,6 @@
     box-sizing: border-box;
     position: absolute;
     width: 100%;
-    bottom: 0rpx;
     /* bottom: env(safe-area-inset-bottom); */
 }
 

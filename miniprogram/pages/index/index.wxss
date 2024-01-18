@@ -3,12 +3,12 @@
 }
 
 .swiper {
-    height: 300rpx;
+    height: 400rpx;
 }
 
 .swiper-img {
     width: 100%;
-    height: 300rpx;
+    height: 400rpx;
     padding: 5rpx 0rpx;
 }
 

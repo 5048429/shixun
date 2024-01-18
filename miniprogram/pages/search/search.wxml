@@ -18,18 +18,30 @@
     </view>
 
     <!-- 搜索结果 -->
-    <view class="result-search" wx:if="{{searchResults.length > 0}}">
-        <view class="search-item" wx:for="{{searchResults}}" wx:key="_id" bindtap="toDetail" data-item="{{item}}">
-            <view class="search-item-content">
-                <text>{{item.name}}</text>
-                <text>{{item.desc}}</text>
-                <!-- 如果有图片列表并且列表不为空，则显示第一张图片 -->
-                <image wx:if="{{item.imgList.length > 0}}" class="search-item-image" src="{{item.imgList[0]}}" />
-                <!-- 其他信息 -->
-                <text>{{item.region}}</text>
-                <text>{{item.date}}</text>
+ <!-- 搜索结果 -->
+ <view class="result-search" wx:if="{{searchResults.length > 0}}">
+        <view wx:for="{{searchResults}}" wx:key="_id" bindtap="toDetail" data-item="{{item}}" class="result-item">
+            <!-- 卡片样式 -->
+            <view class="result-card">
+                <!-- 图片 -->
+                <view class="result-image-container">
+                    <image wx:if="{{item.imgList.length > 0}}" class="result-image" src="{{item.imgList[0]}}" />
+                </view>
+                <!-- 文本内容 -->
+                <view class="result-content">
+                    <text class="result-name">{{item.name}}</text>
+                    <text class="result-desc">{{item.desc}}</text>
+                    <text class="result-region">{{item.region}}</text>
+                    <text class="result-date">{{item.date}}</text>
+                </view>
+                <!-- 箭头图标 -->
+                <image class="arrow-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/right.png"></image>
             </view>
-            <image class="arrow-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/right.png"></image>
         </view>
+    </view>
+
+    <!-- 无搜索结果时的提示 -->
+    <view wx:else class="no-results">
+        <text>未找到相关物品</text>
     </view>
 </view>

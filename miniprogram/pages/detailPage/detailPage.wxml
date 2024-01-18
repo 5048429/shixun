@@ -29,7 +29,7 @@
     <view class="bottom-box">
         <view class="bottom-left" bindtap="toContact">
             <image class="comment-icon" src="cloud://cloud1-8gfg5iwlfbc9b29a.636c-cloud1-8gfg5iwlfbc9b29a-1323785582/images/comment.png"></image>
-            <text class="bottom-text">点击联系我</text>
+            <text class="bottom-text">点击获取联系方式</text>
         </view>
         <view class="bottom-right" bindtap="toCollect">
             <image class="collect-icon" src="{{collectionIcon[0]}}"></image>
